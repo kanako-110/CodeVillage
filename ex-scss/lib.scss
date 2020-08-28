@@ -1,0 +1,75 @@
+
+// 
+// mixin
+// 
+
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+
+// 
+// 共通
+// 
+
+.wrap-all {
+    overflow: hidden;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+.title-japanese {
+    font-size: 3.8rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.title-wrap {
+    display: flex;
+    position: absolute;
+    top:240px;
+    left: 101px;
+    align-items: center;
+    @include sp {
+        top: 60px;
+        left: 20px;
+    }
+}
+
+.title {
+    color: #707070;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+}
+
+.border {
+    background-color: #707070;
+    height: 1px;
+    width: 90px;
+    margin-left: 22.5px;
+}
+
+.inner {
+    width: 84%;
+    margin: 0 auto;
+    padding-top: 291px;
+    @include sp {
+        padding-top: 134px;
+    }
+}

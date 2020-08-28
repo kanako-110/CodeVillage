@@ -1,0 +1,77 @@
+
+.first-v {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    @include tab {
+        display: block;
+    }
+    &_left {
+        position: relative;
+        width: 46%;
+        height: 800px;
+        @include tab {
+            position: initial;
+            height: auto;
+        }
+        
+    }
+    &_right {
+       width: 54%;
+       height: 800px;
+       @include tab {
+           width: 100%;
+           height: auto;
+       }
+        img {
+            width: 100%;
+            height: 100%;
+            @include tab {
+                width: 100%;
+                object-fit: cover;
+                object-position: 5%;
+
+            }
+        }
+    }    
+}
+
+
+.first-v_left .title-japanese {
+    position: absolute;
+    width: 310px;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%);
+    @include tab {
+        width: 192px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
+        font-size: 2.4rem;
+        top: 50%;
+    }
+}
+
+.title-english {
+    position: absolute;
+    width: 430px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 48px;
+    font-size: 6.8rem;
+    font-family: 'Parisienne', cursive;
+    @include tab {
+        width: 300px;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
+        // フォントサイズ、お手本とは異なる
+        font-size: 4.8rem;
+        margin-top: 0;
+    }
+}
+

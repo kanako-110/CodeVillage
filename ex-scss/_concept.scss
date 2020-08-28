@@ -1,0 +1,77 @@
+.concept {
+    height: 967px;
+    background: linear-gradient(to bottom, #A193861F 0%,#A193861F 407px, #A1938689 407px,#A1938689 100%);
+    position: relative;
+    @include sp {
+        height: 711px;
+        background: linear-gradient(to bottom, #A193861F 0%,#A193861F 176px, #A1938689 176px,#A1938689 100%);
+    }
+}
+
+.concept-img {
+    display: flex;
+    &_first {
+        padding-right: 10px;
+        width: 65%;
+        box-sizing: border-box;
+        @include sp {
+            width: 50%;
+            height: 205px;
+            object-fit: cover;
+            object-position: 80%;
+        }
+    }
+    &_second {
+        width: 35%;
+        max-width: 100%;
+        @include sp {
+            width: 50%;
+            height: 205px;
+            object-fit: cover;
+        }
+    }
+}
+
+.concept-desc {
+    display: flex;
+    justify-content: space-between; 
+    position: absolute;
+    margin-top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    align-items: center;
+    color: white;
+    @include tab {
+        display: block;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 15%;
+    }
+    &_text-first {
+        width: 440px;
+        font-size: 35px;
+        letter-spacing: 1.5rem;
+        @include tab {
+            font-size: 2.4rem;
+            width: 320px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+    }
+    &_text-second {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+        line-height: 1.5;
+        width: 40%;
+        @include tab {
+            margin-top: 10%;
+            width: 100%;
+        }
+        
+    }
+}
+
+

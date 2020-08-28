@@ -1,0 +1,52 @@
+.wrap-all {
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.title-japanese {
+  font-size: 3.8rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.title-wrap {
+  display: flex;
+  position: absolute;
+  top: 240px;
+  left: 101px;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .title-wrap {
+    top: 60px;
+    left: 20px;
+  }
+}
+
+.title {
+  color: #707070;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+}
+
+.border {
+  background-color: #707070;
+  height: 1px;
+  width: 90px;
+  margin-left: 22.5px;
+}
+
+.inner {
+  width: 84%;
+  margin: 0 auto;
+  padding-top: 291px;
+}
+@media screen and (max-width: 600px) {
+  .inner {
+    padding-top: 134px;
+  }
+}
+
+/*# sourceMappingURL=lib.css.map */

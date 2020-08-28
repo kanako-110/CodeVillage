@@ -1,0 +1,53 @@
+.menu {
+    position: relative;
+    height: 921px;
+    @include sp {
+        height: 1844px;
+    }
+}
+
+.menu-inner {
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+        display: block;
+    }
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 555px;
+    width: 32%;
+    @include sp {
+        width: 100%;
+        align-items: baseline;
+    }
+}
+
+.menu-img {
+    width: 100%;
+}
+
+.menu-title {
+    font-size: 3rem;
+    @include tab {
+        font-size: 2.5rem;
+    }
+}
+
+.menu-text {
+    font-size: 1.6rem;
+    letter-spacing: 1.6px;
+}
+
+.menu-price {
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+.menu-img, .menu-title, .menu-text {
+    margin-bottom: 35px;
+}

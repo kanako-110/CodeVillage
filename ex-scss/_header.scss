@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    top: 9%;
+    left: 8%;
+    @include tab {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 3.8rem;
+        padding-right: 20px;
+        // fontfamilyお手本とは違います
+        font-family: 'Sawarabi Mincho', sans-serif;
+        // fontfamilyがお手本と違うため追加↓
+        letter-spacing: 0.5rem;
+        @include tab {
+            font-size: 2.2rem;
+        }
+    }
+
+}
+
+
+
+nav {
+    align-items: center;
+    @include tab {
+        display: none;
+    }
+    ul {
+        width: 381px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.8rem;
+        // fontfamlyお手本と違います
+        font-family: 'Sawarabi Mincho', sans-serif;
+        li:nth-child(2),
+        li:nth-child(3),
+        li:nth-child(4) {
+            color: #707070;
+        }
+
+    }
+}
+
+.nav-border {
+    border-bottom: solid;
+}
+
+// ハンバーガー
+
+.ham {
+    @include tab {
+        width: 16px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+            display: inline-block;
+            height: 2px;
+            width: 100%;
+            background-color: black;
+        }
+        span:nth-child(3) {
+            width: 80%;
+        }
+    }
+}
+

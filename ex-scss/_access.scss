@@ -1,0 +1,73 @@
+
+.access {
+    position: relative;
+    background-color: #A193861F;
+    height: 800px;
+    @include sp {
+        height: 710px;
+    }
+}
+
+.access-wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 396px;
+    padding-top: 291px;
+    @include sp {
+        flex-direction: column;
+        height: 514px;
+        padding-top: 134px;
+       }
+    .adress {
+        position: relative;
+        width: 40%;
+        height: 100%;
+        background-color: #D0C5BA;
+        @include sp {
+            order: 2;
+            width: 100%;
+            height: 282px;
+        }
+    }
+    .map {
+        width: 60%;
+        height: 100%;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        @include sp {
+            order: 1;
+            width: 100%;
+            height: 232px;
+        }
+    }
+}
+
+.adress-inner {
+    position: absolute;
+    width: 210px;
+    height: 250px;
+    top: 20%;
+    left: 8%;
+    @include sp {
+        top: 10%;
+        left: 5%;
+    }
+    h3 {
+        color: #00000038;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    p {
+        color: white;
+        font-size: 1.6rem;
+    }
+
+}
+
+.adress-inner p:not(:last-child) {
+    margin-bottom: 24px;
+}
