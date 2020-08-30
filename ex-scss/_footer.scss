@@ -27,7 +27,6 @@ footer {
 
 .footer-wrap {
     padding-top: 248px; 
-    display: flex;
     justify-content: space-between;
     @include sp {
         flex-direction: column;

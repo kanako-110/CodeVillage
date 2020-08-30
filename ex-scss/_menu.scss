@@ -1,13 +1,9 @@
 .menu {
     position: relative;
-    height: 921px;
-    @include sp {
-        height: 1844px;
-    }
+    height: 100%;
 }
 
 .menu-inner {
-    display: flex;
     justify-content: space-between;
     @include sp {
         display: block;
@@ -18,8 +14,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 555px;
+    height: 100%;
     width: 32%;
+    margin-bottom: 70px;
     @include sp {
         width: 100%;
         align-items: baseline;
@@ -28,6 +25,7 @@
 
 .menu-img {
     width: 100%;
+    object-fit: cover;
 }
 
 .menu-title {

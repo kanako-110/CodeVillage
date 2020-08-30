@@ -11,20 +11,6 @@ html {
   font-family: 'Noto Serif JP', serif;
 }
 
-.title-wrap {
-  display: flex;
-  position: absolute;
-  top: 240px;
-  left: 101px;
-  align-items: center;
-}
-@media screen and (max-width: 600px) {
-  .title-wrap {
-    top: 60px;
-    left: 20px;
-  }
-}
-
 .title {
   color: #707070;
   font-size: 1.8rem;
@@ -39,13 +25,19 @@ html {
 }
 
 .inner {
-  width: 84%;
-  margin: 0 auto;
-  padding-top: 291px;
+  margin: 0 8%;
+  display: flex;
+}
+
+.section-name {
+  padding-top: 250px;
+  padding-bottom: 10px;
+  align-items: center;
 }
 @media screen and (max-width: 600px) {
-  .inner {
-    padding-top: 134px;
+  .section-name {
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 }
 
